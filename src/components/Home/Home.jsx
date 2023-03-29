@@ -11,7 +11,7 @@ const Home = () => {
 	}, []);
 
 	return (
-		<div className="movie-container col-span-2">
+		<div className="movie-container col-span-2 grid md:grid-cols-2 gap-5">
 			{movies.map((movie) => (
 				<SingleCart movie={movie}></SingleCart>
 			))}

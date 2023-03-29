@@ -10,7 +10,7 @@ const App = () => {
 		<div>
 			<Header />
       <div className="main">
-        <div className="container grid md:grid-cols-3 gap-5 mx-auto">
+        <div className="container grid md:grid-cols-3 gap-5 mx-auto mt-10">
           <Home />
           <SideCart />
         </div>
