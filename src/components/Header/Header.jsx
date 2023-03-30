@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
 	return (
-		<div className="navbar bg-neutral w-full px-8">
+		<div className="navbar bg-blue-400 w-full px-8 py-5">
 			<div className="flex-1">
 				<a className="btn btn-ghost normal-case text-xl text-white font-normal">
 					Navbar

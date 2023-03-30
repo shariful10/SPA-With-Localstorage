@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import SingleCart from "../SingleCart/SingleCart";
 
-const Home = () => {
+const Home = ({ handleWatchTime }) => {
 	const [movies, setMovies] = useState([]);
 
 	useEffect(() => {
@@ -13,7 +13,9 @@ const Home = () => {
 	return (
 		<div className="movie-container col-span-2 grid md:grid-cols-2 gap-5">
 			{movies.map((movie) => (
-				<SingleCart movie={movie}></SingleCart>
+				<SingleCart
+					handleWatchTime={handleWatchTime}
+					movie={movie}></SingleCart>
 			))}
 		</div>
 	);
