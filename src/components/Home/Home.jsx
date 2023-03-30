@@ -14,8 +14,9 @@ const Home = ({ handleWatchTime }) => {
 		<div className="movie-container col-span-2 grid md:grid-cols-2 gap-5">
 			{movies.map((movie) => (
 				<SingleCart
-					handleWatchTime={handleWatchTime}
-					movie={movie}></SingleCart>
+					movie={movie}
+					key={movie.id}
+					handleWatchTime={handleWatchTime}></SingleCart>
 			))}
 		</div>
 	);

@@ -6,7 +6,7 @@ import Home from "./components/Home/Home";
 import SideCart from "./components/SideCart/SideCart";
 
 const App = () => {
-	const [watchTime, setWatchTime] = useState("");
+	const [watchTime, setWatchTime] = useState(0);
 
 	const handleWatchTime = (time) => {
 		const previousWatchTime = JSON.parse(
